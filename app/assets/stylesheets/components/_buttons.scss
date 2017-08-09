@@ -1,0 +1,29 @@
+.btn-yours {
+  border: 1px solid $primary;
+  color: $primary;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.btn-yours:hover {
+  text-decoration: none;
+  background-color: $primary;
+  color: white;
+  border: 1px solid $primary;
+}
+
+.btn-yours-inverse {
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 50px;
+  background-color: $primary;
+  color: white;
+}
+
+.btn-yours-inverse:hover {
+  border: 1px solid $primary;
+  color: $primary;
+  text-decoration: none;
+  background-color: white;
+}
+

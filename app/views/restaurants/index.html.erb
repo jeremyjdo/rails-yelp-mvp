@@ -1,0 +1,25 @@
+<div class="container padded text-center">
+
+</div>
+
+<div class="container padded">
+   <% @restaurants.each do |restaurant| %>
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title">
+          <h3><%= restaurant.name %></h3>
+          <div class="circle">
+            <div class="circle2 align-center"></div>
+            <div class="circle3 align-center"></div>
+          </div>
+        </div>
+        <div class="card-detail">
+          <p><%= restaurant.address %> <i class="fa fa-home" aria-hidden="true"></i></p>
+          <p><%= restaurant.phone_number %> <i class="fa fa-phone" aria-hidden="true"></i></p>
+        </div>
+      </div>
+      <div class="card-map">
+      </div>
+    </div>
+  <% end %>
+</div>

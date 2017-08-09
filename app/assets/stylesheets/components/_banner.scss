@@ -1,0 +1,26 @@
+
+$start-color: $light-gray;
+$end-color: #2c3e50;
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  text-align: center;
+  height: 50vh;
+}
+.banner h1 {
+  font-size: 35px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.banner p {
+  font-size: 20px;
+  opacity: 0.5;
+  font-weight: lighter;
+}
+
+$horizontal-offset: 0.5; // between -1 and 1
+.banner.horizontal-arrow {
+  background-image: linear-gradient(-225deg, transparent 50% * (1 + $horizontal-offset), $end-color 50% * (1 + $horizontal-offset)), linear-gradient(225deg, $end-color 50% * (1 - $horizontal-offset), $start-color 50% * (1 - $horizontal-offset));
+}

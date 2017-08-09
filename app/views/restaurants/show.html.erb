@@ -1,0 +1,26 @@
+<div class="container padded">
+  <div class="product">
+    <div class='product-body'>
+      <h3><%= @restaurant.name %></h3>
+      <p><b><%= @restaurant.category %></b></p>
+      <p><i class="fa fa-home" aria-hidden="true"></i> <%= @restaurant.address %> - <i class="fa fa-phone" aria-hidden="true"></i> <%= @restaurant.phone_number %></p>
+    </div>
+    <ul class="list-inline product-controls hidden-sm hidden-xs">
+      <li><a href=""><i class="fa fa-heart"></i></a></li>
+      <li><a href=""><i class="fa fa-share"></i></a></li>
+      <li><a href=""><i class="fa fa-star"></i></a></li>
+    </ul>
+  </div>
+</div>
+<div class="container padded">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <%= link_to "new review", new_restaurant_review_path(@restaurant) %>
+      <ul>
+        <% @restaurant.reviews.each do |r| %>
+          <li><%= r.content %> <%= "*" * r.rating %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

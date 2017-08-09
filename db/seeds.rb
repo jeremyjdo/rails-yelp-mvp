@@ -14,19 +14,19 @@ restaurants_attributes = [
   {
     name:         "Epicure au Bristol",
     address:      "112 rue du Fg St-Honoré 75008 Paris",
-    phonenumber:  "0122686482",
+    phone_number:  "0122686482",
     category:     "french"
   },
   {
     name:         "Mac Do",
     address:      "la defense",
-    phonenumber:  "0288686482",
+    phone_number:  "0288686482",
     category:     "chinese"
   },
   {
     name:         "Brigade",
     address:      "56 rue de beaubourg 75012 Paris",
-    phonenumber:  "0122629482",
+    phone_number:  "0122629482",
     category:     "french"
   }
 ]
